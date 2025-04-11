@@ -4,24 +4,26 @@ function Header() {
   return (
     <header>
       {/* Bloc logo + navigation */}
-      <div className='flex justify-between p-5 bg-[#331c52]'>
+      <div className='flex justify-between items-center p-5'>
         {/* Logo à gauche */}
-        <img src={logo} alt="logo" className='w-40 h-auto' />
+        <img src={logo} alt="logo" className='w-32 sm:w-40 h-auto' />
       </div>
 
       {/* Navigation */}
-      <ul className="flex justify-between text-white m-5 p-5 bg-[#8121d0] rounded-t-md">
-        <li>Accueil</li>
-        <li>Projets</li>
-        <li>Contact</li>
+      <ul className="flex justify-between sm:text-white sm:m-5 bg-[#8121d0] rounded-t-md h-12 px-4 mx-5">
+        <li className="text-white py-2 md:py-3.5 sm:px-5">Accueil</li>
+        <li className="text-white py-2 md:py-3.5 sm:px-5">Projets</li>
+        <li className="text-white py-2 md:py-3.5 sm:px-5">Contact</li>
       </ul>
 
       {/* Intro avec la vidéo à droite des titres */}
-      <div className='bg-[#331c52] m-5 p-5 -mt-5 flex items-start'>
-        <div className='flex flex-col mr-5 w-full'>
-          <h1 className='text-white text-2xl font-bold ml-5 mb-20'>Bonjour👋</h1>
-          <h2 className='text-white/15 text-4xl ml-5 mb-20'>Je m'appelle Thibaud<br />Je suis développeur Web.</h2>
-          <p className='text-white text-2xl ml-5'>Je construis des sites sur le Web.</p>
+      <div className='bg-[#331c52] sm:m-5 p-5 md:-mt-5 flex flex-col sm:flex-row items-center sm:items-start mx-5 '>
+        <div className='flex flex-col sm:mr-5 w-full'>
+          <h1 className='text-white text-2xl font-bold ml-5 mb-10 sm:mb-20'>Bonjour👋</h1>
+          <h2 className='text-white/15 text-3xl sm:text-4xl ml-5 mb-10 sm:mb-20'>
+            Je m'appelle Thibaud<br />Je suis développeur Web.
+          </h2>
+          <p className='text-white text-xl sm:text-2xl ml-5 mb-5'>Je construis des sites sur le Web.</p>
 
           {/* Liens sociaux sous les titres */}
           <div className='flex mt-5 ml-5'>
@@ -37,18 +39,18 @@ function Header() {
         {/* Vidéo à droite des titres */}
         <img
           src="/starterpack.gif"
-          className="w-64 h-auto rounded-lg shadow-lg"
+          className="w-64 sm:w-72 h-auto rounded-lg shadow-lg mt-5 sm:mt-0"
         />
       </div>
 
       {/* Section des compétences */}
-      <section className='bg-[#291C3A] min-h-13 -mt-5 m-5 flex justify-between'>
-        <div className='flex gap-3 ml-10 p-1'>
-          <h2 className='text-white text-5xl font-bold'>4</h2>
-          <h3 className='text-white'>Projets développés pour le moment</h3>
+      <section className='bg-[#291C3A] min-h-13 -mt-5 m-5 flex flex-col sm:flex-row justify-between items-center sm:items-start'>
+        <div className='flex gap-3 p-1'>
+          <h2 className='text-white text-3xl sm:text-5xl font-bold'>4</h2>
+          <h3 className='text-white text-xl sm:text-2xl'>Projets développés pour le moment</h3>
         </div>
 
-        <div className='flex gap-3 p-1'>
+        <div className='flex gap-3 p-1 flex-wrap justify-center sm:justify-start'>
           <img src="/logojavascript.svg" alt="JavaScript Logo" className='h-12 p-1' />
           <img src="/htmllogo.svg" alt="HTML Logo" className='h-12 p-1' />
           <img src="/csslogo.svg" alt="CSS Logo" className='h-12 p-1' />
