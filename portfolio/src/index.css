@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 body {
-  background-image: url('./fondport.png');
+  background-image: url('/fondport.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
