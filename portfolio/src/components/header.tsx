@@ -37,8 +37,11 @@ function Header() {
         </div>
 
         {/* Vidéo à droite des titres */}
-        <img
-          src="/starterpack.gif"
+        <video
+          autoPlay
+          loop
+          muted
+          src="/video.mp4"
           className="w-64 sm:w-72 h-auto rounded-lg shadow-lg mt-5 sm:mt-0"
         />
       </div>
