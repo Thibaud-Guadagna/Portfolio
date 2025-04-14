@@ -26,7 +26,7 @@ function About() {
     <section className="flex w-full items-center px-3 py-4">
   {/* Colonne gauche avec le logo Merge */}
   <div className="w-1/2 flex md:justify-center md:items-center md:ml-5">
-    <img src="/mergelogo.svg" alt="Merge Logo" className="h-32 opacity-20 max-w-full" />
+    <img src="/mergelogo.svg" alt="Merge Logo" className="h-50 opacity-20 max-w-full" />
   </div>
 
   {/* Colonne droite avec 2 lignes de 3 logos */}
